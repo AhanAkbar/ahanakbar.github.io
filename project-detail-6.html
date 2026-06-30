@@ -15,7 +15,9 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- Vendor CSS Files -->
@@ -43,8 +45,6 @@
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
             <a href="index.html" class="logo d-flex align-items-center me-auto">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.png" alt=""> -->
                 <h1 class="sitename">Ahan's Portfolio</h1>
             </a>
 
@@ -63,7 +63,8 @@
     <main class="main project-header-section pt-2">
         <div class="container" data-aos="fade-up">
 
-            <div class="d-flex align-items-center gap-3 mb-4">
+            <!-- Bagian Atas: Back Button & Breadcrumb -->
+            <div class="d-flex align-items-center gap-3 mb-3">
                 <a href="index.html#portfolio" class="back-btn"><i class="bi bi-arrow-left"></i>Back</a>
                 <nav class="breadcrumbs m-0">
                     <ol class="breadcrumb m-0">
@@ -72,25 +73,17 @@
                     </ol>
                 </nav>
             </div>
-            <div class="row gy-5 align-items-start">
-                <div class="col-lg-7">
-                    <h1 class="project-title">Shoe Laundry Website</h1>
-                    <div class="title-line"></div>
-                    <p class="description-text mb-4">
-                    Developing a website-based system using Laravel 8 to manage shoe laundry operations digitally. 
-                    Building a frontend page that displays the laundry profile, services, and provides online booking features for customers. 
-                    Developing a backend dashboard that allows admins to record income, expenses, and other financial transactions. 
-                    Implementing a financial report export feature into PDF and Excel formats to facilitate documentation and reporting processes. 
-                    Managing the ordering module on the backend, including managing order status, customer data, and transaction history. 
-                    Integrating the frontend and backend so that order and financial data can be processed and displayed accurately and easily understood by users.
-                    </p>
-                    <div class="tech-used">
-                        <h5 class="fw-bold mb-4"><i class="bi bi-code-slash text-primary"></i> Technologies Used</h5>
-                        <span class="badge bg-light text-dark p-3 px-4 border rounded-pill" style="font-size: large;">Laravel, CSS, Bootstrap, PHP, MySQL, AdminLTE</span>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="media-card mb-4 shadow">
+
+            <!-- Judul Besar Project & Garis Pembatas -->
+            <div class="mb-4">
+                <h1 class="project-title">Shoe Laundry Website</h1>
+                <div class="title-line"></div>
+            </div>
+
+            <!-- Slider Gambar Project (Penuh Selebar Desktop) -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="media-card shadow rounded-3 overflow-hidden">
                         <div class="portfolio-details-slider swiper init-swiper">
                             <script type="application/json" class="swiper-config">
                                 {
@@ -99,7 +92,7 @@
                                     "autoplay": {
                                         "delay": 5000
                                     },
-                                    "slidesPerView": "auto",
+                                    "slidesPerView": 1,
                                     "pagination": {
                                         "el": ".swiper-pagination",
                                         "type": "bullets",
@@ -109,18 +102,67 @@
                             </script>
                             <div class="swiper-wrapper align-items-center">
                                 <div class="swiper-slide">
-                                    <img src="images/1767764175_1_lsepatu.png" class="img-fluid" alt="Detail Project 1">
+                                    <a href="images/1767764175_1_lsepatu.png" class="glightbox"
+                                        data-gallery="project-gallery">
+                                        <img src="images/1767764175_1_lsepatu.png" class="img-fluid w-100"
+                                            alt="Detail Project 1" style="max-height: 500px; object-fit: cover;">
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="images/1767764175_2_lsepatu2.png" class="img-fluid" alt="Detail Project 2">
+                                    <a href="images/1767764175_2_lsepatu2.png" class="glightbox"
+                                        data-gallery="project-gallery">
+                                        <img src="images/1767764175_2_lsepatu2.png" class="img-fluid w-100"
+                                            alt="Detail Project 2" style="max-height: 500px; object-fit: cover;">
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="images/1767764175_3_lsepatu3.png" class="img-fluid" alt="Detail Project 3">
+                                    <a href="images/1767764175_3_lsepatu3.png" class="glightbox"
+                                        data-gallery="project-gallery">
+                                        <img src="images/1767764175_3_lsepatu3.png" class="img-fluid w-100"
+                                            alt="Detail Project 3" style="max-height: 500px; object-fit: cover;">
+                                    </a>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- Konten Deskripsi & Informasi Tambahan -->
+            <div class="row gy-5 align-items-start">
+                <div class="col-lg-7">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-file-earmark-text text-primary"></i> Project Description
+                    </h5>
+                    <p class="description-text mb-4">
+                        Developing a website-based system using Laravel 8 to manage shoe laundry operations digitally.
+                        Building a frontend page that displays the laundry profile, services, and provides online
+                        booking features for customers.
+                        Developing a backend dashboard that allows admins to record income, expenses, and other
+                        financial transactions.
+                        Implementing a financial report export feature into PDF and Excel formats to facilitate
+                        documentation and reporting processes.
+                        Managing the ordering module on the backend, including managing order status, customer data, and
+                        transaction history.
+                        Integrating the frontend and backend so that order and financial data can be processed and
+                        displayed accurately and easily understood by users.
+                    </p>
+
+                    <div class="tech-used">
+                        <h5 class="fw-bold mb-3"><i class="bi bi-code-slash text-primary me-2"></i>Technologies Used
+                        </h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tech-badge">Laravel</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">Bootstrap</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">AdminLTE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
                     <div class="feature-card shadow-sm">
                         <h5 class="fw-bold mb-4"><i class="bi bi-star-fill text-warning"></i> Project Information</h5>
                         <ul class="list-unstyled">
@@ -138,77 +180,41 @@
                             </li>
                             <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
                                 <span class="text-muted">Link :</span>
-                                <span class="fw-bold text-dark">
-                                    <!-- <a href="..." target="_blank" class="text-primary text-decoration-none">
-                                        Visit Link <i class="bi bi-box-arrow-up-right small"></i>
-                                    </a> -->
-                                    <span class="fw-bold text-dark">Local Used</span>
-                                </span>
+                                <span class="fw-bold text-dark">Local Used</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </main>
 
     <footer id="footer" class="footer">
-    <hr class="m-0" style="opacity: 0.1; border-top: 2px solid #000;">
-    <div class="container copyright text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">eNno</strong> <span>All Rights Reserved</span></p>
-        <div class="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+        <hr class="m-0" style="opacity: 0.1; border-top: 2px solid #000;">
+        <div class="container copyright text-center">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">eNno</strong> <span>All Rights Reserved</span></p>
+            <div class="credits">
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
+                    href="https://themewagon.com">ThemeWagon</a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
 
-<!-- Scroll Top -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-<!-- Preloader -->
-<div id="preloader"></div>
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js">
-</script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<!-- Main JS File -->
-<script src="assets/js/main.js"></script>
-<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-<script>
-    // Tunggu semua gambar dimuat, baru jalankan Isotope
-    var grid = document.querySelector('.isotope-container');
-    if (grid) {
-        imagesLoaded(grid, function() {
-            // Re-layout isotope setelah gambar muncul
-            new Isotope(grid, {
-                itemSelector: '.portfolio-item',
-                layoutMode: 'masonry'
-            });
-        });
-    }
-</script>
-<script>
-    var typed = new Typed('#typed', {
-        strings: [
-            'Computer Science Graduate',
-            'Scalable Web Solutions Expert',
-            'Laravel Framework Developer'
-        ],
-        typeSpeed: 50, // Kecepatan mengetik
-        backSpeed: 30, // Kecepatan menghapus
-        backDelay: 2000, // Waktu tunggu sebelum menghapus (2 detik)
-        loop: true, // Mengulang terus menerus
-        cursorChar: '|', // Bentuk kursor
-    });
-</script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 
 </html>
